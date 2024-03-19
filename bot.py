@@ -58,7 +58,7 @@ async def cmd_start(message: types.Message):
 
 
 
-# Вывод стикера по кнопке снизу
+# Вывод стикера по кнопке
 @dp.message(F.text.lower() == "пришли стикер")
 async def send_stick(message: types.Message):
     await bot.send_sticker(chat_id = message.chat.id, sticker = choice(stickers))
