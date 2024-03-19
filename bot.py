@@ -9,7 +9,7 @@ from config_reader import config
 from stickerslist import stickers
 from random import choice
 
-# Включаем логирование, чтобы не пропустить важные сообщения
+# Логирование
 logging.basicConfig(level=logging.INFO)
 # Объект бота
 bot = Bot(token=config.bot_token.get_secret_value())
